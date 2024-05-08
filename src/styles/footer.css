@@ -1,0 +1,115 @@
+.placeholder {
+    position: relative;
+    z-index: -1;
+}
+
+footer {
+    background-color: var(--text-dark);
+    color: var(--white);
+
+    width: 100%;
+    min-height: 50vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* styling for the footer bar since 
+    everything is inherited in links */
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.footer__container {
+    display: grid;
+    gap: 4rem 2rem;
+    
+    /* display grid will automatically 
+    add margin to center, set margin to 0
+    so <footer> space-between can spread
+    elements apart */
+    width: 100%; 
+    margin: 0; 
+
+    background-color: var(--text-dark);
+}
+
+.footer__col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer__col p {
+    font-size: 1rem;
+    max-width: 350px;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.footer__links {
+    display: gird;
+    gap: 0.75;
+}
+
+.footer__links a {
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--white);
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__socials a {
+    padding: 1px;
+    font-size: 1.25rem;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.footer__socials a:hover {
+    color: var(--white);
+}
+
+.footer__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.footer__bar a {
+    color: var(--white);
+}
+
+@media (width > 540px) {
+    .footer__container {
+        grid-template-columns: 1fr, 2fr;
+    }
+
+    .footer__col:first-child {
+        grid-area: 1/1/2/3;
+    }
+}
+
+@media (width > 768px) {
+    .footer__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .footer__col:first-child {
+        grid-area: 1/1/2/3;
+    }
+}

@@ -1,0 +1,31 @@
+.about__container {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__container .section__header {
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+}
+
+.about__container .section__description {
+    column-count: 1;
+    column-gap: 2rem;
+}
+
+.about__container .section__description p {
+    margin-bottom: 1rem;
+}
+
+@media (width > 768px) {
+    .about__container .section__header {
+        width: 60%;
+    }
+
+    .about__container .section__description {
+        column-count: 4;
+    }
+}

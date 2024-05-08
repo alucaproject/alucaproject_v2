@@ -1,0 +1,71 @@
+.accordion-parent {
+    background-color: transparent;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.accordion .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-family: inherit;
+    font-size: inherit;
+
+    padding: 1.5rem 0 1.5rem 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: color 0.15s ease, fill 0.15s ease;
+}
+
+.accordion .toggle:hover {
+    color: var(--text-light);
+    fill: var(--text-light);
+}
+
+.accordion:first-child .toggle {
+    border-bottom: 0px;
+}
+
+.accordion .toggle .direction-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    padding: 0 2rem 0 0;
+} 
+
+.accordion .content-parent {
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid var(--text-light);
+
+    transition: all 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.accordion.toggled .content-parent {
+    max-height: 500px;
+    transition: all 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* further content stylling */
+.accordion .content-wrapper {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.accordion .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+@media (width > 768px ){
+    .accordion .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

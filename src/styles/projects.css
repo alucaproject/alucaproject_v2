@@ -1,0 +1,35 @@
+.projects__container {
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projects__container .section__header {
+    margin: 2rem 0 2rem 0;
+
+    align-self: center;
+    width: 100%;
+    padding: 0;
+}
+.projects__container .accordion-parent {
+    align-self: center;
+    width: 100%;
+    padding: 0;
+}
+
+@media (width > 768px){
+
+    .projects__container .section__header {
+        align-self:flex-start;
+        width: 60%; 
+        /* width: calc( (100%/4)*1 ); /* to give 1 column width out 4 column look */
+        padding-right: 1rem; /* 1rem to simulate a 2rem gap between section__header and saccordion__parent */
+    }
+    .projects__container .accordion-parent {
+        align-self: flex-end;
+        width: calc( (100%/4)*3 ); /* to give 3 column with out 4 column look */ 
+        padding-left: 1rem; /* 1rem to simulate a 2rem gap between section__header and saccordion__parent */
+    }
+
+}
