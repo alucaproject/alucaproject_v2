@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/alucaproject_v2/static/css/main.c93c86db.css",
-    "main.js": "/alucaproject_v2/static/js/main.4594d83a.js",
+    "main.css": "/alucaproject_v2/static/css/main.d359ed33.css",
+    "main.js": "/alucaproject_v2/static/js/main.4111318e.js",
     "static/js/453.883b3d96.chunk.js": "/alucaproject_v2/static/js/453.883b3d96.chunk.js",
     "static/media/HelveticaNeueBlack.otf": "/alucaproject_v2/static/media/HelveticaNeueBlack.5da043fb65bc9976a840.otf",
     "static/media/HelveticaNeueLight.otf": "/alucaproject_v2/static/media/HelveticaNeueLight.a7c3c98319c1341d5aa5.otf",
     "static/media/HelveticaNeueMedium.otf": "/alucaproject_v2/static/media/HelveticaNeueMedium.38884ffafe8888205009.otf",
     "static/media/Nohemi-Medium.woff": "/alucaproject_v2/static/media/Nohemi-Medium.2dd372ab95d5fd945828.woff",
     "index.html": "/alucaproject_v2/index.html",
-    "main.c93c86db.css.map": "/alucaproject_v2/static/css/main.c93c86db.css.map",
-    "main.4594d83a.js.map": "/alucaproject_v2/static/js/main.4594d83a.js.map",
+    "main.d359ed33.css.map": "/alucaproject_v2/static/css/main.d359ed33.css.map",
+    "main.4111318e.js.map": "/alucaproject_v2/static/js/main.4111318e.js.map",
     "453.883b3d96.chunk.js.map": "/alucaproject_v2/static/js/453.883b3d96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c93c86db.css",
-    "static/js/main.4594d83a.js"
+    "static/css/main.d359ed33.css",
+    "static/js/main.4111318e.js"
   ]
 }
