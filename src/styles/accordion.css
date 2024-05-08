@@ -8,6 +8,10 @@
     max-width: 100%;
 }
 
+button {
+    color: var(--text-dark);
+}
+
 .accordion .toggle {
     display: flex;
     justify-content: space-between;

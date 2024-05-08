@@ -47,36 +47,38 @@ const Loader = ( {setLoading} ) => {
     return(
         <>
             <div className="loader__wrapper">
+                <div className="loader__container">
 
-                <AnimatePresence>
-                <motion.div
-                variants={textParent}
-                initial="initial"
-                animate="animate"
-                exit="exit">
-                    <div className="loader__item">
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>a</motion.span>
-                    </div>
+                    <AnimatePresence>
+                    <motion.div
+                    variants={textParent}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit">
+                        <div className="loader__item">
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>a</motion.span>
+                        </div>
 
-                    <div className="loader__item">
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>L</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>u</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>c</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>a</motion.span>
-                    </div>
+                        <div className="loader__item">
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>L</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>u</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>c</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>a</motion.span>
+                        </div>
 
-                    <div className="loader__item">
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>P</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>r</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>o</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>j</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>e</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>c</motion.span>
-                        <motion.span style={{display: "inline-block"}} variants={textChild}>t</motion.span>
-                    </div>
-                </motion.div>
-                </AnimatePresence>
+                        <div className="loader__item">
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>P</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>r</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>o</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>j</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>e</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>c</motion.span>
+                            <motion.span style={{display: "inline-block"}} variants={textChild}>t</motion.span>
+                        </div>
+                    </motion.div>
+                    </AnimatePresence>
 
+                </div>
             </div>
         </>
     );

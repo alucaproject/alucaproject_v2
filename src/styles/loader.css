@@ -10,6 +10,11 @@
     align-items:center;
     justify-content: center;
 }
+
+.loader__container {
+    transform: translateY(-200%);
+}
+
 .loader__item {
     display: inline-block;
     overflow: hidden;
@@ -19,6 +24,11 @@
 }
 
 @media (width > 768px) {
+
+    .loader__container {
+        transform: translateY(0%);
+    }
+
     .loader__item {
         font-size: 3.7vw;
     }
