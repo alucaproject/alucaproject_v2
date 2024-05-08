@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/alucaproject_v2/static/css/main.f2075dca.css",
-    "main.js": "/alucaproject_v2/static/js/main.d5869394.js",
-    "static/js/453.883b3d96.chunk.js": "/alucaproject_v2/static/js/453.883b3d96.chunk.js",
-    "static/media/HelveticaNeueBlack.otf": "/alucaproject_v2/static/media/HelveticaNeueBlack.5da043fb65bc9976a840.otf",
-    "static/media/HelveticaNeueLight.otf": "/alucaproject_v2/static/media/HelveticaNeueLight.a7c3c98319c1341d5aa5.otf",
-    "static/media/HelveticaNeueMedium.otf": "/alucaproject_v2/static/media/HelveticaNeueMedium.38884ffafe8888205009.otf",
-    "static/media/Nohemi-Medium.woff": "/alucaproject_v2/static/media/Nohemi-Medium.2dd372ab95d5fd945828.woff",
-    "index.html": "/alucaproject_v2/index.html",
-    "main.f2075dca.css.map": "/alucaproject_v2/static/css/main.f2075dca.css.map",
-    "main.d5869394.js.map": "/alucaproject_v2/static/js/main.d5869394.js.map",
-    "453.883b3d96.chunk.js.map": "/alucaproject_v2/static/js/453.883b3d96.chunk.js.map"
+    "main.css": "/static/css/main.ab977ac2.css",
+    "main.js": "/static/js/main.24a2702d.js",
+    "static/js/453.883b3d96.chunk.js": "/static/js/453.883b3d96.chunk.js",
+    "static/media/HelveticaNeueBlack.otf": "/static/media/HelveticaNeueBlack.5da043fb65bc9976a840.otf",
+    "static/media/HelveticaNeueLight.otf": "/static/media/HelveticaNeueLight.a7c3c98319c1341d5aa5.otf",
+    "static/media/HelveticaNeueMedium.otf": "/static/media/HelveticaNeueMedium.38884ffafe8888205009.otf",
+    "static/media/Nohemi-Medium.woff": "/static/media/Nohemi-Medium.2dd372ab95d5fd945828.woff",
+    "index.html": "/index.html",
+    "main.ab977ac2.css.map": "/static/css/main.ab977ac2.css.map",
+    "main.24a2702d.js.map": "/static/js/main.24a2702d.js.map",
+    "453.883b3d96.chunk.js.map": "/static/js/453.883b3d96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2075dca.css",
-    "static/js/main.d5869394.js"
+    "static/css/main.ab977ac2.css",
+    "static/js/main.24a2702d.js"
   ]
 }
