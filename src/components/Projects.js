@@ -183,7 +183,7 @@ const Projects = () => {
                 </div>
             </motion.div>
         
-            <Accordion items={data} keepOthersOpen={false}/>
+            <Accordion items={data} keepOthersOpen={true}/>
         
         </div>
     )

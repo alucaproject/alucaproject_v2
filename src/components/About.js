@@ -1,89 +1,17 @@
 import "../styles/about.css";
 import transition from "../transition";
-import { useRef, useEffect } from "react";
-import {motion, useInView, useAnimation} from "framer-motion";
 
-// framer variants 
-
-const scrollEffect = {
-    initial: {
-        opacity: 1,
-    },
-    animate: {
-        opacity: 1,
-        transition: {
-            duration: 1.2,
-            delayChildren: -0.2,
-            staggerChildren: 0.2,
-        }
-    },
-    exit: {
-    },
-}
-
-const scrollEffectChild = {
-    initial: {
-        y: 200,
-    },
-    animate: {
-        y: 0,
-        transition: {
-            duration: 1.2,
-            ease: [0.6, 0.01, -0.05, 0.9],
-        }
-    },
-    exit: {
-    },
-}
 
 const About = () => {
-
-    const targetRef = useRef(null);
-    const control = useAnimation();
-    const isInView = useInView(targetRef);
-
-    useEffect( () => {
-        if(isInView){
-            control.start("animate");
-        }else{
-            control.start("initial");
-        }
-    }, [isInView]);
 
     return (
         <div className="section__container about__container" id="about">
             
-            <motion.div 
-            ref={targetRef}
-            variants={scrollEffect}
-            initial="initial"
-            animate={control}
-            exit="exit"
-            className="section__header">
-
-                <div style={{overflow:"hidden"}}>
-                    <motion.span 
-                    variants={scrollEffectChild}
-                    style={{display: "inline-block"}}>
-                    I’m a front-end developer focused on  
-                    </motion.span>
-                </div>
-                <div style={{overflow:"hidden"}}>
-                    <motion.span 
-                    variants={scrollEffectChild}
-                    style={{display: "inline-block"}}>
-                    crafting modern designs and engaging user  
-                    </motion.span>
-                </div>
-                <div style={{overflow:"hidden"}}>
-                    <motion.span 
-                    variants={scrollEffectChild}
-                    style={{display: "inline-block"}}>
-                    experiences to create visually stunning websites. 
-                    </motion.span>
-                </div>
-
-            </motion.div>
+            <div className="section__header">
+                I’m a front-end developer focused on crafting modern 
+                designs and engaging user experiences to create visually 
+                stunning websites. 
+            </div>
             
             
             <div className="section__description">
