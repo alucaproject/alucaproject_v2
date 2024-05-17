@@ -113,7 +113,7 @@ const data = [
                     </p>
                     <br />
                     <ul>
-                        <li><a href="https://www.instfrom.com"><i className="ri-arrow-right-line"></i>  www.instform.com</a></li>
+                        <li><a href="https://www.instform.com"><i className="ri-arrow-right-line"></i>  www.instform.com</a></li>
                     </ul>
                 </div>
             </div>
