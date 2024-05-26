@@ -166,24 +166,26 @@ const Projects = () => {
     }, [isInView]);
 
     return (
-        <div className="section__container projects__container" id="projects"> 
+        <div className="section__container">
+            <div className="projects__container" id="projects"> 
 
-            <motion.div 
-            ref={targetRef}
-            variants={scrollEffect}
-            initial="initial"
-            animate="animate"
-            className="section__header">
-                <div style={{overflow:"hidden"}}>
-                    <motion.span 
-                    variants={scrollEffectChild}
-                    style={{display: "inline-block"}}>
-                    Click on project for case study drop down.
-                    </motion.span>
-                </div>
-            </motion.div>
-        
-            <Accordion items={data} keepOthersOpen={true}/>
+                <motion.div 
+                ref={targetRef}
+                variants={scrollEffect}
+                initial="initial"
+                animate="animate"
+                className="section__header">
+                    <div style={{overflow:"hidden"}}>
+                        <motion.span 
+                        variants={scrollEffectChild}
+                        style={{display: "inline-block"}}>
+                        Click on project for case study drop down.
+                        </motion.span>
+                    </div>
+                </motion.div>
+            
+                <Accordion items={data} keepOthersOpen={true}/>
+            </div>
         
         </div>
     )

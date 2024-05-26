@@ -7,7 +7,7 @@ footer {
     background-color: var(--text-dark);
     color: var(--white);
 
-    width: 100%;
+    width: 100vw;
     min-height: 50vh;
     position: fixed;
     left: 0;
@@ -28,12 +28,10 @@ footer {
     display: grid;
     gap: 4rem 2rem;
     
-    /* display grid will automatically 
-    add margin to center, set margin to 0
-    so <footer> space-between can spread
-    elements apart */
-    width: 100%; 
-    margin: 0; 
+    
+    max-width: var(--max-width); 
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem 2rem; 
 
     background-color: var(--text-dark);
 }
@@ -84,7 +82,9 @@ footer {
 }
 
 .footer__bar {
-    padding: 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem 2rem;
     font-size: 0.9rem;
     color: var(--white);
     text-align: center;

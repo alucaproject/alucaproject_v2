@@ -1,5 +1,8 @@
 .projects__container {
     min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 2rem 4rem 2rem;
     
     display: flex;
     flex-direction: column;

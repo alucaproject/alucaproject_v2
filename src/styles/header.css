@@ -1,5 +1,8 @@
 .header__container {
     height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 2rem 4rem 2rem;
     overflow: hidden;
 
     display: flex;
@@ -45,6 +48,20 @@
         line-height: 10vw;
     }
 
+}
+
+/* Regulating hero title text for large displays */
+@media (width > 1920px) {
+    .hero__title {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+}
+@media (width > 2560px) {
+    .hero__title {
+        font-size: 3.7vw;
+        line-height: 3.7vw;
+    }
 }
 
 

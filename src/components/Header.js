@@ -16,7 +16,7 @@ const parentText = {
 }
 const childText = {
     initial: {
-        y: 150,
+        y: 250,
     },
     animate: {
         y: 0,
@@ -48,31 +48,33 @@ const Header = () => {
 
     return (
         <header>
-            <div className="section__container header__container" id="home">
+            <div className="section__container">
+                <div className="header__container" id="home">
 
-                <motion.div 
-                variants={parentText}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                className="hero__area">
-                    <div style={{overflow: "hidden", width: "100%"}}>
-                        <motion.h2 
-                        variants={childText}
-                        className="hero__title">CREATIVE</motion.h2>
-                    </div>
-                    <div style={{overflow: "hidden", width: "100%"}}>
-                        <motion.h2 
-                        variants={childText}
-                        className="hero__title hero__title__second__line">DEVELOPER</motion.h2>
-                    </div>
-                    <div style={{overflow: "hidden", width: "100%"}}>
-                        <motion.p 
-                        variants={childTextTwo}
-                        className="section__subheader">Book projects from {todayDate.getMonth() + 3}/{todayDate.getUTCFullYear()}</motion.p>
-                    </div>
-                </motion.div>
-
+                    <motion.div 
+                    variants={parentText}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    className="hero__area">
+                        <div style={{overflow: "hidden", width: "100%"}}>
+                            <motion.h2 
+                            variants={childText}
+                            className="hero__title">CREATIVE</motion.h2>
+                        </div>
+                        <div style={{overflow: "hidden", width: "100%"}}>
+                            <motion.h2 
+                            variants={childText}
+                            className="hero__title hero__title__second__line">DEVELOPER</motion.h2>
+                        </div>
+                        <div style={{overflow: "hidden", width: "100%"}}>
+                            <motion.p 
+                            variants={childTextTwo}
+                            className="section__subheader">Book projects from {todayDate.getMonth() + 3}/{todayDate.getUTCFullYear()}</motion.p>
+                        </div>
+                    </motion.div>
+                
+                </div>
             </div>
         </header>
     )
